@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Screen 1 -->
+    <div id="screen1" class="screen">
+        <h2>Welcome to our Quiz</h2>
+        <label for="userName">Enter Your Name:</label>
+        <input type="text" id="userName" placeholder="Your Name" required>
+        <button onclick="startQuiz()">Start Playing</button>
+    </div>
+
+    <!-- Screen 2 -->
+    <div id="screen2" class="screen">
+        <div id="questionContainer">
+            <!-- Question and answer buttons dynamically populated here -->
+        </div>
+        <button onclick="nextQuestion()">Next Question</button>
+    </div>
+
+    <!-- Screen 3 -->
+    <div id="screen3" class="screen">
+        <p id="userResult"></p>
+        <button onclick="viewDashboard()">View Dashboard</button>
+    </div>
+
+    <!-- Screen 4 -->
+    <div id="screen4" class="screen">
+        <h2>Player History</h2>
+        <ul id="playerHistory">
+            <!-- Player history dynamically populated here -->
+        </ul>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
